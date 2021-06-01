@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 
+// use
+// component name must be uppercase
+// must be in function/component body
+// cannot call conditionally
+
 const UseStateBasics = () => {
   // console.log(useState('hello world'));
   // const value = useState(1)[0]
