@@ -9,12 +9,16 @@ import React, { useState, useEffect } from "react";
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
 
+  /**
+   * As the second argument, we can also pass it here a array, and that is the array of dependencies.So essentially that is called a list of dependencies. And if we leave this blank, that just means that it will only run on the initial render.
+   */
   useEffect(() => {
     console.log("call useEffect");
     if (value >= 1) {
       document.title = `New Messages(${value})`;
     }
-  });
+  }, [value]);
+
   console.log("render component");
   return (
     <>
