@@ -7,6 +7,11 @@ const UseStateObject = () => {
     message: "random message",
   });
 
+  // Solution with multiple state values
+  // const [name,setName] = useState('peter')
+  // const [age,setAge] = useState(24)
+  // const [message,setMessage] = useState('random message')
+
   const changeMessage = () => {
     /**
      * For example, if you're using the object, then you need to make sure that you always, always use the spread operator.Or there's also some other older setup where essentially you copy the old values from the state value and then you just decide which one you would want to choose.
